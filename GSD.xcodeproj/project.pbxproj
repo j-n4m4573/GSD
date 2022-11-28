@@ -13,6 +13,9 @@
 		6145BFA62932DD9400C1FA7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6145BFA52932DD9400C1FA7F /* Preview Assets.xcassets */; };
 		61E7D29629356A730055ACC3 /* GSDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E7D29529356A730055ACC3 /* GSDTests.swift */; };
 		61E7D29E29356C400055ACC3 /* GSDTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E7D29C29356C3C0055ACC3 /* GSDTask.swift */; };
+		61E7D2A129356D560055ACC3 /* GSDTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E7D29F29356D4E0055ACC3 /* GSDTaskView.swift */; };
+		61E7D2A329356DAD0055ACC3 /* GSDTaskVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E7D2A229356DAD0055ACC3 /* GSDTaskVM.swift */; };
+		61E7D2A529356DE20055ACC3 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E7D2A429356DE20055ACC3 /* StorageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 		61E7D29329356A730055ACC3 /* GSDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GSDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E7D29529356A730055ACC3 /* GSDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSDTests.swift; sourceTree = "<group>"; };
 		61E7D29C29356C3C0055ACC3 /* GSDTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSDTask.swift; sourceTree = "<group>"; };
+		61E7D29F29356D4E0055ACC3 /* GSDTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSDTaskView.swift; sourceTree = "<group>"; };
+		61E7D2A229356DAD0055ACC3 /* GSDTaskVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSDTaskVM.swift; sourceTree = "<group>"; };
+		61E7D2A429356DE20055ACC3 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 			children = (
 				6145BF9E2932DD9200C1FA7F /* GSDApp.swift */,
 				6145BFA02932DD9200C1FA7F /* ContentView.swift */,
+				61E7D29F29356D4E0055ACC3 /* GSDTaskView.swift */,
+				61E7D2A229356DAD0055ACC3 /* GSDTaskVM.swift */,
+				61E7D2A429356DE20055ACC3 /* StorageService.swift */,
 				61E7D29C29356C3C0055ACC3 /* GSDTask.swift */,
 				6145BFA22932DD9400C1FA7F /* Assets.xcassets */,
 				6145BFA42932DD9400C1FA7F /* Preview Content */,
@@ -200,8 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61E7D2A129356D560055ACC3 /* GSDTaskView.swift in Sources */,
+				61E7D2A529356DE20055ACC3 /* StorageService.swift in Sources */,
 				61E7D29E29356C400055ACC3 /* GSDTask.swift in Sources */,
 				6145BFA12932DD9200C1FA7F /* ContentView.swift in Sources */,
+				61E7D2A329356DAD0055ACC3 /* GSDTaskVM.swift in Sources */,
 				6145BF9F2932DD9200C1FA7F /* GSDApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
