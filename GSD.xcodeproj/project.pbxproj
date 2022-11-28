@@ -11,7 +11,18 @@
 		6145BFA12932DD9200C1FA7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6145BFA02932DD9200C1FA7F /* ContentView.swift */; };
 		6145BFA32932DD9400C1FA7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6145BFA22932DD9400C1FA7F /* Assets.xcassets */; };
 		6145BFA62932DD9400C1FA7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6145BFA52932DD9400C1FA7F /* Preview Assets.xcassets */; };
+		61E7D29629356A730055ACC3 /* GSDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E7D29529356A730055ACC3 /* GSDTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61E7D29729356A730055ACC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6145BF932932DD9200C1FA7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6145BF9A2932DD9200C1FA7F;
+			remoteInfo = GSD;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6145BF9B2932DD9200C1FA7F /* GSD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +30,19 @@
 		6145BFA02932DD9200C1FA7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6145BFA22932DD9400C1FA7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6145BFA52932DD9400C1FA7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		61E7D29329356A730055ACC3 /* GSDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GSDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E7D29529356A730055ACC3 /* GSDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSDTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6145BF982932DD9200C1FA7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E7D29029356A730055ACC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				6145BF9D2932DD9200C1FA7F /* GSD */,
+				61E7D29429356A730055ACC3 /* GSDTests */,
 				6145BF9C2932DD9200C1FA7F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				6145BF9B2932DD9200C1FA7F /* GSD.app */,
+				61E7D29329356A730055ACC3 /* GSDTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +89,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		61E7D29429356A730055ACC3 /* GSDTests */ = {
+			isa = PBXGroup;
+			children = (
+				61E7D29529356A730055ACC3 /* GSDTests.swift */,
+			);
+			path = GSDTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,6 +117,24 @@
 			productReference = 6145BF9B2932DD9200C1FA7F /* GSD.app */;
 			productType = "com.apple.product-type.application";
 		};
+		61E7D29229356A730055ACC3 /* GSDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61E7D29B29356A730055ACC3 /* Build configuration list for PBXNativeTarget "GSDTests" */;
+			buildPhases = (
+				61E7D28F29356A730055ACC3 /* Sources */,
+				61E7D29029356A730055ACC3 /* Frameworks */,
+				61E7D29129356A730055ACC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61E7D29829356A730055ACC3 /* PBXTargetDependency */,
+			);
+			name = GSDTests;
+			productName = GSDTests;
+			productReference = 61E7D29329356A730055ACC3 /* GSDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +147,10 @@
 				TargetAttributes = {
 					6145BF9A2932DD9200C1FA7F = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					61E7D29229356A730055ACC3 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 6145BF9A2932DD9200C1FA7F;
 					};
 				};
 			};
@@ -116,6 +168,7 @@
 			projectRoot = "";
 			targets = (
 				6145BF9A2932DD9200C1FA7F /* GSD */,
+				61E7D29229356A730055ACC3 /* GSDTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +180,13 @@
 			files = (
 				6145BFA62932DD9400C1FA7F /* Preview Assets.xcassets in Resources */,
 				6145BFA32932DD9400C1FA7F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E7D29129356A730055ACC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		61E7D28F29356A730055ACC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E7D29629356A730055ACC3 /* GSDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61E7D29829356A730055ACC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6145BF9A2932DD9200C1FA7F /* GSD */;
+			targetProxy = 61E7D29729356A730055ACC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6145BFA72932DD9400C1FA7F /* Debug */ = {
@@ -315,6 +391,40 @@
 			};
 			name = Release;
 		};
+		61E7D29929356A730055ACC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swiftog444.com.GSDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GSD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GSD";
+			};
+			name = Debug;
+		};
+		61E7D29A29356A730055ACC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swiftog444.com.GSDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GSD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GSD";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -332,6 +442,15 @@
 			buildConfigurations = (
 				6145BFAA2932DD9400C1FA7F /* Debug */,
 				6145BFAB2932DD9400C1FA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61E7D29B29356A730055ACC3 /* Build configuration list for PBXNativeTarget "GSDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61E7D29929356A730055ACC3 /* Debug */,
+				61E7D29A29356A730055ACC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
